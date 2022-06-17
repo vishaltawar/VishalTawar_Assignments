@@ -1,4 +1,5 @@
 package com.cg.assignment_1;
+import java.util.Scanner;
 
 public class ArmsrongNumber {
 	String result;
@@ -25,8 +26,12 @@ public class ArmsrongNumber {
 	}
 	public static void main(String[] args)
 	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number :-");
+		int no1= sc.nextInt();
 		ArmsrongNumber a =new ArmsrongNumber();
-		System.out.println(a.armstrongNo(153));
+		
+		System.out.println(a.armstrongNo(no1));
 		
 	}
 	
