@@ -16,17 +16,20 @@ public class ArmsrongNumber {
 		}	
 		if(arm==no1)
 		{
-			result=no1 +" is Armstrong";
+			result=no1 +" is Armstrong Number";
 		}
 		else
 		{ 
-			result=no1+" is Not Armstrong";
+			result=no1+" is Not Armstrong Number";
 		}
 		return result;
 	}
 	
 		public void armstrongNoRange()
 		{
+			
+		System.out.println("------------  Armstrong Number Between 100 to 999  -------------------------");
+
 			int i,r,t,arm=0,fn,sn,tn;
 			for(i=100;i<=999;i++)
 			{
@@ -43,21 +46,5 @@ public class ArmsrongNumber {
 					
 				}
 			}
-		}
-
-	
-	
-	public static void main(String[] args)
-	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the Number :-");
-		int no1= sc.nextInt();
-		ArmsrongNumber a =new ArmsrongNumber();
-		System.out.println(a.armstrongNo(no1));
-		System.out.println();
-		System.out.println("------------  Armstrong Number Between 100 to 999  -------------------------");
-		
-		a.armstrongNoRange();
-	}
-	
+		}	
 }
